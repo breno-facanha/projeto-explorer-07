@@ -78,7 +78,7 @@ img{
     transition: 400ms;
 }
 
-.car img:hover{
+.card img:hover{
     transform: scale(1.1);
 }
 
