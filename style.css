@@ -23,12 +23,12 @@ body{
 }
 
 .page{
-    width: 330px;
+    width: 33rem;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
 }
+
 
 
 header {
@@ -59,7 +59,9 @@ header h1{
 }
 
 main{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     gap: 3.2rem;
 
     animation: downtop 700ms reverse;
@@ -142,4 +144,47 @@ img{
 }
 
 
+@media (min-width: 700px) {
+    :root{
+        --fs-heading: 5.6rem;
+    }
+    header h1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .page{
+       width: 120rem;
+       margin: auto;  
+       padding: 0 1rem; 
+    }
+
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+   
+
+    main div:nth-child(1){
+        width: 47rem;
+    }
+
+    main div:nth-child(2){
+        width: 67rem;
+    }
+
+    main div:nth-child(3){
+        width: 67rem;
+    }
+
+    main div:nth-child(4){
+        width: 47rem;
+    }
+
+
+
+}
 
