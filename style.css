@@ -30,8 +30,11 @@ body{
 
 }
 
+
 header {
     margin: 10rem 0 8rem;
+
+    animation: topdown 700ms;
 }
 
 header p{
@@ -58,6 +61,9 @@ header h1{
 main{
     display: grid;
     gap: 3.2rem;
+
+    animation: downtop 700ms reverse;
+
 }
 
 img{
@@ -113,3 +119,27 @@ img{
     display: inline-flex;
     align-items: center;
 }
+
+    
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes downtop {
+    100% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+
+
