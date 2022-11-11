@@ -22,6 +22,7 @@ body{
     font-size: var(--fs-body);
 }
 
+
 .page{
     width: 33rem;
     display: flex;
@@ -59,6 +60,7 @@ header h1{
 }
 
 main{
+
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -145,46 +147,90 @@ img{
 
 
 @media (min-width: 700px) {
+    .page {
+        background-color: #ffffff;
+        width: 80rem;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main div:nth-child(1){
+    width: 33rem;
+    height: 41.6rem;
+    }
+
+    main div:nth-child(2){
+    width: 33rem;
+    height: 41.6rem;
+    }
+
+    main div:nth-child(3){
+    width: 33rem;
+    height: 41.6rem;
+    }
+
+    main div:nth-child(4){
+    width: 33rem;
+    height: 41.6rem;
+    }
+}
+
+@media (min-width: 1200px) {
     :root{
         --fs-heading: 5.6rem;
     }
     header h1 {
-        font-size: 56px;
-        line-height: 64px;
+        font-size: 5.6rem;
+        line-height: 6.4rem;
     }
     .page{
-       width: 120rem;
+       width: 130rem;
        margin: auto;  
        padding: 0 1rem; 
     }
 
     main {
-        width: 100%;
         display: flex;
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
     }
 
-   
-
     main div:nth-child(1){
         width: 47rem;
+        height: 41.6rem;
     }
 
     main div:nth-child(2){
         width: 67rem;
+        height: 41.6rem;
     }
 
     main div:nth-child(3){
         width: 67rem;
+        height: 41.6rem;
     }
 
     main div:nth-child(4){
         width: 47rem;
+        height: 41.6rem;
     }
 
+} 
 
 
-}
+
+
+
+
+
+
+
+
 
